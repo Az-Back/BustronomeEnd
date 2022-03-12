@@ -1,0 +1,133 @@
+.navbar1 
+{
+    width: 283px;
+    height: 895px;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    position: fixed;
+    z-index: 2;
+}
+
+.LogoNav
+{
+    padding-top: 33px;
+}
+
+.TextNav
+{   
+    z-index: 10;
+    width: 283px;
+    height: 40px;
+    line-height: 20px;
+    font-size: 14px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 1px;
+    vertical-align: middle;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+
+.lala 
+{
+    width: 0%;
+    height: 40px;
+    
+}
+
+.lala:hover
+{
+    z-index: 0;
+    width: 100%;
+    background-color: #333;
+    animation: place 0.5s linear;
+}
+
+ @keyframes place 
+{
+    0%
+    {
+        width: 0%;
+    }
+
+    100%
+    {
+        width: 100%;
+    }
+}
+
+.lolo
+{
+    width: 283px;
+    height: 40px;
+}
+
+.RefNav.active 
+{
+    background-color: #9b886a;
+    color: #1a1a1a;
+    font-weight: bold;
+}
+
+.highlist 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 20px 0 0;
+    text-align: center;
+    height: 410px;
+    vertical-align: middle;
+}
+
+.RefNav 
+{
+    padding: 10px;
+    line-height: 20px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.RefNav:hover
+{
+    color: #9b886a;
+}
+
+.RefNav.active:hover
+{
+    color: black;
+}
+
+.place 
+{   
+    width: 283px;
+    height: 42px;
+    bottom: 50px;
+    position: absolute;
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+}
+
+.Icon 
+{
+    width: 30px;
+    margin-left: 10px;
+    color: #9b886a;
+}
+
+.links-place
+{
+    margin-left: 10px;
+    width: 160px;
+}
+
+.RefNav2 
+{
+    color: #9b886a;
+    font-size: 14px;
+}

@@ -1,0 +1,102 @@
+.all 
+{
+    margin-left: 2%;
+    padding: 8px 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: inline-block;
+    margin-top: 5px;
+    width: 100%;
+    
+}
+
+.footer
+{
+    bottom: 0;
+    width: 100%;
+    height: 74px;
+    background-color: black;
+    color: #666666;
+    font-size: 14px;
+    display: inline-block;
+    position: absolute;
+    z-index: 3;
+}
+
+.Loading
+{
+    top: 0;
+    height: 6px;
+    background-color: #9b886a;
+    width: 100%;
+    animation: load 5s linear infinite;
+}
+
+@keyframes load 
+{
+    0% 
+    {
+        width: 0%;
+    }
+
+    100% 
+    {
+        width: 100%
+    }
+
+}
+
+
+
+.foot 
+{
+    text-decoration: none;
+    color: #9b886a;
+}
+
+.cadre1 
+{
+    margin-left: 10px;
+    display: inline;
+    font-size: 12px;
+}
+
+.fa-facebook 
+{
+    background-color: black;
+    color: white;
+    margin-left: 10px;
+}
+
+.fa-google-plus
+{
+    background-color: black;
+    color: white;
+    margin-left: 10px;
+}
+
+.fa-instagram
+{
+    background-color: black;
+    color: white;
+    margin-left: 10px;
+}
+
+.right 
+{
+    float: right;
+    font-size: 9px;
+    margin-right: 3%;
+}
+
+.under
+{
+    text-align: right;
+    color: white;
+}
+
+.fa-heart
+{
+    color: #9b886a;
+}

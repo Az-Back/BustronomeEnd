@@ -1,0 +1,55 @@
+:root
+{
+    --mainColor: #000;
+    --secondColor: #fff;
+    --thirdColor: rgb(142,144,114);
+    --darktheme: rgb(26, 26, 26);
+    --bluedark: rgb(102,118,156);
+}
+
+*, ::before, ::after
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background: var(--mainColor);
+    color: var(--secondColor);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+i
+{
+    color: var(--thirdColor);
+    margin: 0px 2px;
+}
+
+#fb, #gg, #insta
+{
+    color: var(--secondColor);
+    border: 1px solid white;
+    padding: 5px 7px;
+    border-radius: 50%;
+}
+
+footer button
+{
+    background: var(--mainColor);
+    border: none;
+    color: var(--thirdColor);
+    font-weight: bold;
+}
+
+footer button:hover
+{
+    text-decoration: underline;
+}
+
+footer button:first-of-type
+{
+    color: grey;
+}
