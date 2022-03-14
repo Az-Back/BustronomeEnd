@@ -7,7 +7,7 @@
   <ul class="highlist">
     <div class="lolo"><li class="TextNav"><a class="RefNav active" href="">RÉSERVEZ MAINTENANT</a></li></div>
     
-    <div class="lala"><li class="TextNav"><a class="RefNav" href="">☆ CARTE CADEAU ☆</a></li></div>
+    <div class="lala"><li class="TextNav"><a class="RefNav" href="">☆  CARTE CADEAU  ☆</a></li></div>
     
     <div class="lala"><li class="TextNav"><a class="RefNav" href="">LES OFFRES</a></li></div>
     

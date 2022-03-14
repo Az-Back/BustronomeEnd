@@ -13,24 +13,38 @@
 <body>
 <div class="container1">
 <?php include '../includes/navbar.php'; ?>
+<div class="Title">
+<h1 class="title">
+   <span>Un restaurant original à bord d'un bus à impériale</span> : vivez une expérience inédite !</h1>
+</div>
 <div class="carousel">
       <div class="carousel_inner">
          <div class="carousel_item carousel_item__active">
             <img src="../images/Bustronome1.jpg" alt="" class="carousel_img">
          </div>
          <div class="carousel_item">
+            <img src="../images/tour.jpg" alt="" class="carousel_img">
+         </div>
+         <div class="carousel_item">
             <img src="../images/repas.jpg" alt="" class="carousel_img">
          </div>
          <div class="carousel_item">
-            <img src="../images/tour.jpg" alt="" class="carousel_img">
+            <img src="../images/manger.jpg" alt="" class="carousel_img">
          </div>
       </div>
    </div>
 </div>
+<div class="sideshow">
+   <div class="sideshow-inner">
+         <h1 class="MainH1">PROFITEZ D’UNE VUE IMPRENABLE</h1>
+         <h2 class="MainH2">Grâce au toit entièrement vitré de ce bus à impériale, plongez dans l’univers parisien dans les meilleures conditions de confort, quelle que soit la saison.</h2>
+   </div>
+</div>     
 <form>
                 <select name="selectCity" id="selectCity">
-                    <option value="paris">Paris</option>
+                    <option value="paris"><p>Paris</p></option>
                     <option value="londres">Londres</option>
+                    <div class="selectop"></div>
                 </select>
 </form>  
 <?php include '../includes/footer.php'; ?>
