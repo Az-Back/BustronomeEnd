@@ -1,7 +1,7 @@
 .navbar1 
 {
     width: 283px;
-    height: 895px;
+    height: 1000px;
     background-color: #1a1a1a;
     color: white;
     text-align: center;
@@ -31,6 +31,15 @@
     text-align: center;
 }
 
+.lala:after {
+    display: block;
+    top: -1px;
+    left: 0;
+    width: 283px;
+    height: 1px;
+    background: rgba(157,157,157,0.06);
+    content: "";
+}
 
 .lala 
 {
@@ -44,7 +53,7 @@
     z-index: 0;
     width: 100%;
     background-color: #333;
-    animation: place 0.5s linear;
+    animation: place 0.2s linear;
 }
 
  @keyframes place 
@@ -106,7 +115,7 @@
 {   
     width: 283px;
     height: 42px;
-    bottom: 50px;
+    bottom: 18%;
     position: absolute;
     text-align: center;
     font-size: 14px;

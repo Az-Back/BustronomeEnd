@@ -2,12 +2,12 @@
 <script src="https://kit.fontawesome.com/10a6ffe905.js" crossorigin="anonymous"></script>
 <nav class="navbar1">
   <div class="LogoNav">
-    <a href="https://www.bustronome.com./fr/"><img class="LogoNavImage" src="../images/logo.png"></a>
+    <a href="../pages/accueilParis.php"><img class="LogoNavImage" src="../images/logo.png"></a>
 </div>
   <ul class="highlist">
-    <div class="lolo"><li class="TextNav"><a class="RefNav active" href="">RÉSERVEZ MAINTENANT</a></li></div>
+    <div class="lolo"><li class="TextNav"><a class="RefNav active" href="../pages/reservation.php" target="_blank">RÉSERVEZ MAINTENANT</a></li></div>
     
-    <div class="lala"><li class="TextNav"><a class="RefNav" href="">☆  CARTE CADEAU  ☆</a></li></div>
+    <div class="lala"><li class="TextNav"><a class="RefNav" href="">☆&nbsp; CARTE CADEAU &nbsp;☆</a></li></div>
     
     <div class="lala"><li class="TextNav"><a class="RefNav" href="">LES OFFRES</a></li></div>
     
@@ -24,6 +24,7 @@
     <div class="lala"><li class="TextNav"><a class="RefNav" href="">QUESTIONS FRÉQUENTES</a></li></div>
     
     <div class="lala"><li class="TextNav"><a class="RefNav" href="">CONTACTEZ LE BUSTRONOME PARIS</a></li></div>
+    
   </ul>
   <div class="place">
     <div class="Icon"><i class="fa-solid fa-location-dot fa-3x"></i></div>

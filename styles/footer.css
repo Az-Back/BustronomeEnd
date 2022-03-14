@@ -31,7 +31,7 @@
     height: 6px;
     background-color: #9b886a;
     width: 100%;
-    animation: load 5s linear infinite;
+    animation: load 5s infinite ease-in-out;
 }
 
 @keyframes load 

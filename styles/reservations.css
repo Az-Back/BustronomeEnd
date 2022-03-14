@@ -1,0 +1,173 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: auto;
+    background-image: url("../images/repas.jpg");
+    background-size: cover;
+}
+
+.all1 
+{
+    margin-left: 10px;
+}
+
+.block 
+{
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 75%;
+    height: 85%;
+    left: 20%;
+    background-color: #222;
+    z-index: 1;
+    position: absolute;
+}
+
+.block-inside
+{
+    background-color: #222;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.reservUL
+{
+    list-style: none;
+    margin: 0;
+    border-bottom: 2px solid #1f1f1f;
+    margin-bottom: 20px;
+    display: flex;
+    padding-left: 0;
+}
+
+.reservli:hover
+{
+    background-color: #9b886a;
+}
+
+.reservli
+{
+    background-color: 222;
+    border-right: 1px solid #1f1f1f;
+    padding: 15px;
+    list-style: none;
+    display: inline-block;
+    letter-spacing: 0;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.glyphicon 
+{
+    color: white;
+    height: 10px;
+}
+
+.active 
+{
+    background-color: #9b886a;
+}
+
+.titre 
+{
+    font-size: 30px;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 400;
+}
+
+.titre1 
+{
+    font-size: 24px;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 400;
+}
+
+.ui-datepicker .ui-datepicker-header {
+    position: relative;
+    padding: .2em 0;
+    background-color: grey;
+    border: 1px solid black;
+}
+
+.ui-datepicker
+{
+    border: 1px solid black;
+}
+
+.ui-datepicker table {
+    width: 100%;
+    font-size: .9em;
+    border-collapse: collapse;
+    border: #222;
+    margin: 0 0 .4em;
+    background-color: #222;
+}
+
+thead {
+    color: white;
+}
+
+.ui-widget-content {
+    border: 1px solid #aaaaaa;
+    background: none;
+    color: #222222;
+}
+
+.table
+{
+    width: auto !important;
+    color: white;
+    text-align: center !important;
+    vertical-align: middle !important;
+    border: none !important;
+    border-top: none !important;
+    line-height: 1em !important;
+    height: 200px !important;
+}
+
+tbody
+{
+    border: none !important;
+}
+
+
+td {
+    padding: 5px !important;
+    text-align: center !important;
+    vertical-align: top !important;
+    border-top: none !important;
+}
+
+th 
+{
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+.load
+{
+    color: #9b886a !important;
+}
+
+.services-Table td:not(:last-child), .services-Table th:not(:last-child) {
+    border-right: 1px solid #a09173;
+}
+
+.top 
+{
+    border-top: 1px solid #9b886a;
+    border-bottom: 1px solid #9b886a;
+}
