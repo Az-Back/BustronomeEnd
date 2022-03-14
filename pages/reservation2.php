@@ -20,8 +20,8 @@
 </head>
 <body>
 <?php include '../includes/navbar.php'; ?>
-<div class="block">
-    <div class="block-inside">
+<div class="block1">
+    <div class="block-inside1">
     <ul class="reservUL">
         <li class="reservli"><span class="glyphicon glyphicon-calendar">&nbsp;Date & Heure</span><li>
         <li class="reservli active"><span class="glyphicon glyphicon-user">&nbsp;Menus</span><li>
@@ -43,40 +43,71 @@
                 <div class="menu-container">
                         <div class="menu">
                             <div class="topimg"><img class="allimg" src="../images/menu_1.jpg">
-                            Déjeuner - 70€
-                            Menu en 4 étapes
-                            Entrée, poisson, viande et dessert
+                            <h3>Déjeuner - 70€</h3>
+                            <p>Menu en 4 étapes <br>Entrée, poisson, viande et dessert</p>
                             </div>
-                            <div class="bot"></div>
+                            <div class="bottom">
+                                    <a href=""><span class="glyphicon glyphicon-minus"></span></a>
+                                <span class="update">0</span>
+                                    <a href=""><span class="glyphicon glyphicon-plus"></span></a>
+                                </div>
                         </div>
                     </div>
                     <div class="menu-container">
                         <div class="menu">
                             <div class="topimg">
-                                <img class="allimg" src="../images/menu_1.jpg">
+                                <img class="allimg" src="../images/menu_2.jpg">
+                                <h3>Déjeuner - boissons comprises - 90€</h3>
+                                <p>Menu dégustation en 4 étapes avec accord mets et vins : <br>2 verres de vin, eau minérale ou gazeuse, café ou thé</p>
+                                <div class="bottom">
+                                    <a href=""><span class="glyphicon glyphicon-minus"></span></a>
+                                <span class="update">0</span>
+                                    <a href=""><span class="glyphicon glyphicon-plus"></span></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="menu-container">
                         <div class="menu">
                             <div class="topimg">
-                                <img class="allimg" src="../images/menu_1.jpg">
+                                <img class="allimg" src="../images/menu_40.jpg">
+                                <h3>Déjeuner et visite Arc de triomphe - 83€</h3>
+                                <p>Menu en 4 étapes sans boisson <br>+ Visite libre de l'Arc de triomphe avec accès prioritaire</p>
                             </div>
+                            <div class="bottom">
+                                    <a href=""><span class="glyphicon glyphicon-minus"></span></a>
+                                <span class="update">0</span>
+                                    <a href=""><span class="glyphicon glyphicon-plus"></span></a>
+                                </div>
                         </div>
                     </div>
                     <div class="menu-container">
                         <div class="menu">
                             <div class="topimg">
-                                <img class="allimg" src="../images/menu_1.jpg">
+                                <img class="allimg" src="../images/menu_3.jpg">
+                                <h3>Déjeuner enfant - 40€</h3>
+                                <p>Menu en 3 étapes avec une boisson. <br>Pour les moins de 12 ans</p>
                             </div>
+                            <div class="bottom">
+                                    <a href=""><span class="glyphicon glyphicon-minus"></span></a>
+                                <span class="update">0</span>
+                                    <a href=""><span class="glyphicon glyphicon-plus"></span></a>
+                                </div>
                         </div>
                     </div>
+            </div>
+            <div class="buttondown">
+                <a class="buttondrop" href="reservation.php">Retour</a>
+                <a class="buttondrop1 active"href="reservation.php">Continuer</a>
+            </div>
+            <div class="buttondown">
+                <a href="formulaire.php" class="buttondrop2">Ajouter un menu</a>
             </div>
         </div>
     </div>
 </div>
 
-
+<?php include '../includes/footer.php'; ?>
 
 <script src="../script/calendar.js"></script>
 
