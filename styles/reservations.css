@@ -171,3 +171,45 @@ th
     border-top: 1px solid #9b886a;
     border-bottom: 1px solid #9b886a;
 }
+
+.littletext
+{
+    font-size: 14px;
+    color: white;
+}
+
+.menus {
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    grid-gap: 10px;
+}
+
+.menu-container {
+    display: inline-block;
+    min-width: 220px;
+    padding: 0px 10px 10px 0px;
+    text-align: center;
+    vertical-align: top;
+    width: 23.75%;
+}
+
+.menu {
+    font-size: 16px;
+    padding: 0px;
+    width: 300px;
+    background-color: white;
+}
+
+.allimg 
+{
+    width: 300px;
+    height: 200px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+}
