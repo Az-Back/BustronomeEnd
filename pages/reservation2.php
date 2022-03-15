@@ -1,3 +1,7 @@
+<?php
+require('../actions/showAllMenuAction.php');
+session_start()
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,6 +31,13 @@
         <li class="reservli active"><span class="glyphicon glyphicon-user">&nbsp;Menus</span><li>
         <li class="reservli"><span class="glyphicon glyphicon-option-horizontal">&nbsp;Options</span><li>
         <li class="reservli"><span class="glyphicon glyphicon-ok">&nbsp;Confirmation & Paiement</span><li>
+        <?php 
+        if(isset($_SESSION['auth'])){
+          ?>
+        <li class="reservli"><a class="buttondown" href="formulaire.php">&nbsp;Ajouter un menu</a><li>
+        <?php
+        }
+        ?>
     </ul>
             <div class="all1">
                 <div id="demo">
@@ -95,19 +106,37 @@
                                 </div>
                         </div>
                     </div>
+                    <?php
+
+                    while($question = $getAllQuestions->fetch()){
+                        ?>
+        <div class="menu-container">
+            <div class="menu">
+                <div class="topimg">
+                <?= '<img class="allimg" src="data:image/png|image/jpeg|image/gif|image/jpg;base64,' . base64_encode( $question['bin'] ) . '" />'; ?>
+                <h3><?= $question['titre']; ?> <?= $question['contenu']; ?></h3>
+                <p><?= $question['description']; ?></p>
+                </div>
+                <div class="bottom">
+                    <a href=""><span class="glyphicon glyphicon-minus"></span></a>
+                        <span class="update">0</span>
+                        <a href=""><span class="glyphicon glyphicon-plus"></span></a>
+                </div>
+                <div><a href="../actions/deleteMenu.php?id=<?= $question['id']; ?>" class="btn btn-danger">Supprimer le menu</a></div>
             </div>
+        </div>    
+        <?php
+    }
+    ?>
             <div class="buttondown">
                 <a class="buttondrop" href="reservation.php">Retour</a>
                 <a class="buttondrop1 active"href="reservation.php">Continuer</a>
             </div>
-            <div class="buttondown">
-                <a href="formulaire.php" class="buttondrop2">Ajouter un menu</a>
             </div>
         </div>
     </div>
 </div>
 
-<?php include '../includes/footer.php'; ?>
 
 <script src="../script/calendar.js"></script>
 

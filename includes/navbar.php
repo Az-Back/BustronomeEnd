@@ -24,7 +24,27 @@
     <div class="lala"><li class="TextNav"><a class="RefNav" href="">QUESTIONS FRÉQUENTES</a></li></div>
     
     <div class="lala"><li class="TextNav"><a class="RefNav" href="">CONTACTEZ LE BUSTRONOME PARIS</a></li></div>
-    
+    <?php 
+        if(!isset($_SESSION['auth'])){
+          ?>
+    <div class="lala"><li class="TextNav"><a class="RefNav" href="signup.php">INSCRIPTION</a></li></div>
+    <?php
+        } 
+          ?>
+        <?php 
+        if(!isset($_SESSION['auth'])){
+          ?>
+    <div class="lala"><li class="TextNav"><a class="RefNav" href="login.php">CONNEXION</a></li></div>
+    <?php
+        } 
+          ?>
+          <?php 
+        if(isset($_SESSION['auth'])){
+          ?>
+    <div class="lala"><li class="TextNav"><a class="RefNav" href="../actions/logoutAction.php">DECONNEXION</a></li></div>
+    <?php
+        } 
+          ?>
   </ul>
   <div class="place">
     <div class="Icon"><i class="fa-solid fa-location-dot fa-3x"></i></div>
