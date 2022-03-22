@@ -54,7 +54,7 @@ select
     top: 50px;
     opacity: 0.5;
     color: #9b886a;
-    webkit-appearance: none;
+    -webkit-appearance: none;
    -moz-appearance: none;
         appearance: none;
         border: 1px solid white;
@@ -152,6 +152,7 @@ form
   left: 310px;
   display: block;
   line-height: 1.5em;
+  opacity: 1;
 }
 
 .sideshow-inner 

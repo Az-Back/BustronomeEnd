@@ -8,6 +8,7 @@ session_start()
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/paris.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
     </style>
@@ -37,7 +38,7 @@ session_start()
       </div>
    </div>
 </div>
-<div class="sideshow">
+<div class="sideshow" id="sideshow">
    <div class="sideshow-inner">
          <h1 class="MainH1">PROFITEZ D’UNE VUE IMPRENABLE</h1>
          <h2 class="MainH2">Grâce au toit entièrement vitré de ce bus à impériale, plongez dans l’univers parisien dans les meilleures conditions de confort, quelle que soit la saison.</h2>
