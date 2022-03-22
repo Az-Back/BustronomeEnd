@@ -8,6 +8,7 @@ session_start()
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/paris.css">
+    <link rel="stylesheet" href="../styles/mediaqueries.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');

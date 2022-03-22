@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="../styles/footer.css">
+<link rel="stylesheet" href="../styles/mediaqueries.css">
 <footer>
 <div class="footer">
     <div class="Loading"></div>

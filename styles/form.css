@@ -17,11 +17,6 @@ body
     text-align: center;
 }
 
-@media (max-width: 1300px) {
-    .container {
-         width: auto !important; 
-    }
-}
 
 .form-control
 {

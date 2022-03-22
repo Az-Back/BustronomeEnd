@@ -1,0 +1,167 @@
+@media screen and (max-width: 1000px) {
+    body {
+        overflow-y: visible;
+        overflow-x: auto;
+        height: 200vh;
+    }
+    
+     .navbar1 {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    
+    .highlist {display: none;}
+    .toggle {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 60px;
+    }
+
+    .highlist .lolo{
+        width: 100%;
+        text-align: center;
+    }
+
+    .highlist .lala{
+        width: 100%;
+        text-align: center;
+    }
+
+    .highlist .TextNav{
+        width: 100%;
+        text-align: center;
+    }
+
+    .highlist .lala::after{
+        width: 100%;
+        text-align: center;
+    }
+
+    .toggle.active .highlist {
+        display: flex;
+        text-align: center;
+      }
+
+      .lala:hover
+    {
+    width: 100%;
+    background-color: #333;
+    animation: none;
+    }
+    .place {
+        position: absolute;
+        top: 9%;
+        left: 35%;
+        right: 50%
+    } 
+      
+    .LogoNav {
+        padding-top: 0;
+    }
+
+    .sideshow {
+       z-index: 6;
+       position: absolute;
+       bottom: 0;
+       width: 100%;
+       left: 0;
+       top: 145%;
+       display: block;
+       padding: 0;
+       font-size: 10px;
+    }
+
+    .sideshow-inner {
+        z-index: 6;
+        padding-top: 40px;
+    }
+    
+    .carousel {
+        display: block;
+        z-index: 4;
+        width: 100%;
+        height: 400px;
+        position: absolute;
+        top: 51%;
+    }
+
+    .carousel_img {
+        display: block;
+    }
+
+    .Title{
+        z-index: 6;
+       position: absolute;
+       width: 100%;
+       left: 0;
+       top: 92%;
+       display: block;
+       font-size: 10px;
+    }
+
+    select {
+        position: absolute;
+        top: 25%;
+        right: 1%;
+        z-index: 6;
+        width: 150px;
+        height: 30px;
+    }
+
+    .footer {
+        height: auto;
+        bottom: auto;
+        padding-bottom: 20px;
+    }
+
+    .all {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .cadre1 {
+        margin-left: 0;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    .right {
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right .under {
+        text-align: center;
+    }
+
+    .detail {
+        display: flex;
+        flex-direction: column;
+        padding: 2px;
+    }
+}
+
+  /* @media (max-width: 1300px) {
+    .container {
+         width: auto !important; 
+    }
+} */
+@media screen and (max-width: 400px) {
+    select {
+        display: none;
+    }
+
+    .sideshow{
+        font-size: 6px;
+     }
+
+
+    .title{
+       font-size: 14px;
+    }
+
+}   

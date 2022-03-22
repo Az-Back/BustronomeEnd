@@ -1,9 +1,15 @@
 <link rel="stylesheet" href="../styles/navbar.css">
+<link rel="stylesheet" href="../styles/mediaqueries.css">
 <script src="https://kit.fontawesome.com/10a6ffe905.js" crossorigin="anonymous"></script>
 <nav class="navbar1">
   <div class="LogoNav">
     <a href="../pages/accueilParis.php"><img class="LogoNavImage" src="../images/logo.png"></a>
 </div>
+<div class="toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+</div> 
   <ul class="highlist">
     <div class="lolo"><li class="TextNav"><a class="RefNav active" href="../pages/reservation.php" target="_blank">RÉSERVEZ MAINTENANT</a></li></div>
     
@@ -52,4 +58,5 @@
       <span>ARC DE TRIOMPHE</span>
     <a class="RefNav2" href="">angle avenue Kleber</a></div>
   </div>
+  <script src="../script/navbar.js"></script>
 </nav>

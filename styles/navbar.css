@@ -140,3 +140,98 @@
     color: #9b886a;
     font-size: 14px;
 }
+
+.toggle 
+{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background: transparent;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    display: none;
+}
+
+.toggle span 
+{
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    border-radius: 4px;
+    background: #ac956e;
+    transition: 0.5s;
+}
+
+.toggle span:nth-child(1)
+{
+    transform: translateY(-15px);
+    width: 40px;
+    left: 15px; 
+    background: #ac956e;
+}
+
+.toggle span:nth-child(2)
+{
+    transform: translateY(15px);
+    width: 40px;
+    left: 15px;
+    background: #ac956e; 
+}
+
+
+.toggle:hover span 
+{
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    border-radius: 4px;
+    background: #ac956e;
+    transition: 0.5s;
+}
+
+.toggle:hover span:nth-child(1)
+{
+    transform: translateY(-15px);
+    width: 40px;
+    left: 15px; 
+    background: #ac956e;
+}
+
+.toggle:hover span:nth-child(2)
+{
+    transform: translateY(15px);
+    width: 40px;
+    left: 15px;
+    background: #ac956e;
+}
+
+.toggle.active span:nth-child(1)
+{
+    width: 40px;
+    transform: translateY(0px) rotate(45deg);
+    transition-delay: 0.125s;
+    background: #ac956e;
+}
+
+.toggle.active span:nth-child(2)
+{
+    width: 40px;
+    transform: translateY(0px) rotate(315deg);
+    transition-delay: 0.25s;
+    background: #ac956e;
+}
+
+.toggle.active span:nth-child(3)
+{
+    transform: translateX(60px);
+    background: #ac956e;
+}
+
+.activeNav
+{
+    display: block !important;
+}
