@@ -83,14 +83,14 @@ function textchange4(){
 
 setInterval(function() { 
    $('.sideshow')
-   .fadeOut()
+   .fadeOut(500)
    .fadeIn(1000)
    .end()
  }, 5000);
 
  setInterval(function() { 
    $('.carousel')
-   .fadeOut()
+   .fadeOut(500)
    .fadeIn(1000)
    .end()
  }, 5000);
