@@ -89,6 +89,10 @@ body
     font-size: 14px;
 }
 
+.textli {
+    color: white;
+}
+
 .glyphicon 
 {
     color: white;
