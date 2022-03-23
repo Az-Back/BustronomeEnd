@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/reservations.css">
+    <link rel="stylesheet" href="../styles/mediaqueries2.css">
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
     </style>
@@ -23,10 +24,10 @@
 <div class="block">
 <div class="block-inside">
 <ul class="reservUL">
-    <li class="reservli active"><span class="glyphicon glyphicon-calendar">&nbsp;Date & Heure</span><li>
-    <li class="reservli"><span class="glyphicon glyphicon-user">&nbsp;Menus</span><li>
-    <li class="reservli"><span class="glyphicon glyphicon-option-horizontal">&nbsp;Options</span><li>
-    <li class="reservli"><span class="glyphicon glyphicon-ok">&nbsp;Confirmation & Paiement</span><li>
+        <li class="reservli active"><span class="glyphicon glyphicon-calendar"></span><span class="textli">&nbsp;Date & Heure</span><li>
+        <li class="reservli"><span class="glyphicon glyphicon-user"></span><span class="textli">&nbsp;Menus</span><li>
+        <li class="reservli"><span class="glyphicon glyphicon-option-horizontal"></span><span class="textli">&nbsp;Options</span><li>
+        <li class="reservli"><span class="glyphicon glyphicon-ok"></span><span class="textli">&nbsp;Confirmation & Paiement</span><li>
 </ul>
 <div class="all1">
 <h2 class="titre">Réservez une table</h2>
