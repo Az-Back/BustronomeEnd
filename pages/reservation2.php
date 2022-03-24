@@ -48,6 +48,10 @@ session_start()
              <div>
                 <h1 class="titre1">Nombres des couverts et choix des menus</h1>
             </div>
+            <div class="buttondown">
+                <a class="buttondrop" href="reservation.php">Retour</a>
+                <a class="buttondrop1 active"href="reservation.php">Continuer</a>
+            </div>
             <div>
                 <h1 class="littletext">Consulter <a class="load" href="menus.php">nos menus</a>.</h1>
             </div>
@@ -130,10 +134,7 @@ session_start()
         <?php
     }
     ?>
-            <div class="buttondown">
-                <a class="buttondrop" href="reservation.php">Retour</a>
-                <a class="buttondrop1 active"href="reservation.php">Continuer</a>
-            </div>
+            
             </div>
         </div>
     </div>

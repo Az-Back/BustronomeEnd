@@ -3,15 +3,16 @@
       require('../actions/publishmenu.php');
 ?>
 <link rel="stylesheet" href="../styles/form.css">
+<link rel="stylesheet" href="../styles/mediaqueries2.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <!DOCTYPE html>
 <html lang="en">
 <?php include '../includes/navbar.php'; ?>
 <body>
-<div class="block">
+<div class="block2">
 <div class="block-inside">
 <br><br>
-    <form class="container" method="POST" enctype="multipart/form-data">
+    <form class="container1" method="POST" enctype="multipart/form-data">
 
     <?php if(
       isset($errorMsg))

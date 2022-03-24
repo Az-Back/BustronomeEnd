@@ -52,6 +52,18 @@
         margin-right: auto;
         margin-top: 0 !important;
       }
+
+    .buttondown {
+        margin-top: 0;
+    } 
+
+    .block2 {
+        position: relative;
+        z-index: 11;
+        margin: auto;
+        left: 0;
+        height: 50%;
+    }  
 }
 
 @media screen and (max-width: 500px) {
