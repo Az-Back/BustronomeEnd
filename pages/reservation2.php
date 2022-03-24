@@ -43,8 +43,8 @@ session_start()
     </ul>
             <div class="all1">
                 <div id="demo">
-
                 </div>
+                <div class="test">Pour <p id="update"> 0 </p> personnes </div>
              <div>
                 <h1 class="titre1">Nombres des couverts et choix des menus</h1>
             </div>
@@ -64,9 +64,9 @@ session_start()
                             <p>Menu en 4 étapes <br>Entrée, poisson, viande et dessert</p>
                             </div>
                             <div class="bottom">
-                                    <a href=""><span class="glyphicon glyphicon-minus"></span></a>
-                                <span class="update">0</span>
-                                    <a href=""><span class="glyphicon glyphicon-plus"></span></a>
+                                <a href="" class="menu-"><span class="glyphicon glyphicon-minus"></span></a>
+                            <span class="update">0</span>
+                                <a href="" class="menu+"><span class="glyphicon glyphicon-plus"></span></a>
                                 </div>
                         </div>
                     </div>
@@ -77,9 +77,9 @@ session_start()
                                 <h3>Déjeuner - boissons comprises - 90€</h3>
                                 <p>Menu dégustation en 4 étapes avec accord mets et vins : <br>2 verres de vin, eau minérale ou gazeuse, café ou thé</p>
                                 <div class="bottom">
-                                    <a href=""><span class="glyphicon glyphicon-minus"></span></a>
+                                    <a href="" class="menu-"><span class="glyphicon glyphicon-minus"></span></a>
                                 <span class="update">0</span>
-                                    <a href=""><span class="glyphicon glyphicon-plus"></span></a>
+                                    <a href="" class="menu+"><span class="glyphicon glyphicon-plus"></span></a>
                                 </div>
                             </div>
                         </div>
