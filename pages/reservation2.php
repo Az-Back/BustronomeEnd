@@ -25,6 +25,7 @@ session_start()
 </head>
 <body>
 <?php include '../includes/navbar.php'; ?>
+<?php if(isset($errorMsg)){echo '<p>'.$errorMsg.'</p>';} ?>
 <div class="block1">
     <div class="block-inside1">
     <ul class="reservUL">
@@ -33,7 +34,7 @@ session_start()
         <li class="reservli"><span class="glyphicon glyphicon-option-horizontal"></span><span class="textli">&nbsp;Options</span><li>
         <li class="reservli"><span class="glyphicon glyphicon-ok"></span><span class="textli">&nbsp;Confirmation & Paiement</span><li>
         <?php 
-        if(isset($_SESSION['auth'])){
+        if(isset($_SESSION['password'])){
           ?>
         <li class="reservli"><a class="buttondown" href="formulaire.php">&nbsp;Ajouter un menu</a><li>
         <?php

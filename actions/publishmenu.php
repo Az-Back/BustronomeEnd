@@ -16,11 +16,10 @@ if(isset($_POST['validate'])){
         $question_image_size = $_FILES['picture']['size'];
         $question_image_type = $_FILES['picture']['type'];
         $question_image_bin = file_get_contents($_FILES['picture']['tmp_name']);
-        $question_id_author = $_SESSION['id'];
         $question_pseudo_author = $_SESSION['pseudo'];
         
         // Inserer la question sur la question
-        $insertQuestionOnWebsite = $bdd->prepare('INSERT INTO menus(titre, description, contenu, nom_image, image_taille, type_image, bin, id_auteur, pseudo_auteur)VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)');
+        $insertQuestionOnWebsite = $bdd->prepare('INSERT INTO menus(titre, description, contenu, nom_image, image_taille, type_image, bin, pseudo_auteur)VALUES(?, ?, ?, ?, ?, ?, ?, ?)');
         $insertQuestionOnWebsite->execute(
             array(
                 $question_title, 
@@ -30,7 +29,6 @@ if(isset($_POST['validate'])){
                 $question_image_size,
                 $question_image_type,
                 $question_image_bin,
-                $question_id_author,
                 $question_pseudo_author
             )
         );

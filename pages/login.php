@@ -22,7 +22,7 @@
       <div class="row100">
      <div class="col">
          <div class="inputBox">
-             <input type="text" name="password" required="required">
+             <input type="password" name="password" required="required">
              <span class="text">Password</span>
              <span class="line"></span>
    </div>

@@ -9,32 +9,19 @@ if(isset($_POST['validate'])){
     if(!empty($_POST['pseudo']) && !empty($_POST['password'])){
 
         // Les données de l'user
-        $user_pseudo = htmlspecialchars($_POST['pseudo']);
-        $user_password = htmlspecialchars($_POST['password']);
+        $pseudo_par_defaut = "admin";
+        $mdp_par_defaut = "admin1234";
 
-        // Verifier si l'utilisateur existe (si le pseudo est correct)
-        $checkIfUserExists = $bdd->prepare('SELECT * FROM users WHERE pseudo = ?');
-        $checkIfUserExists->execute(array($user_pseudo));
-
-        if($checkIfUserExists->rowCount() > 0){
-
-            // Récuperer les données de l'utilisateur et comparer le mdp
-            $usersInfos = $checkIfUserExists->fetch();
-            if(password_verify($user_password, $usersInfos['mdp'])){
-                
-                // Authentifier l'utilisateur sur le site et récuperer ses données
-                $_SESSION['auth'] = true;
-                $_SESSION['id'] = $usersInfos['id'];
-                $_SESSION['pseudo'] = $usersInfos['pseudo'];
-
-                header('Location: ../pages/accueilParis.php');
-
-            } else {
-                $errorMsg = "Votre mot de passe est incorrect...";
-            }
-
+        $pseudo_saisi = htmlspecialchars($_POST['pseudo']);
+        $mdp_saisi = htmlspecialchars($_POST['password']);
+    
+        if($pseudo_saisi == $pseudo_par_defaut && $mdp_saisi == $mdp_par_defaut){
+            $_SESSION['password'] = $mdp_saisi;
+            $_SESSION['pseudo'] = $pseudo_saisi;
+            $_SESSION['auth'] = true;
+            header('Location: ../pages/accueilParis.php'); 
         } else {
-            $errorMsg = "Le pseudo de l'utilisateur est deja utilisé";
+            $errorMsg = "Votre mot de passe ou pseudo est incorrect";
         }
 
     } else {
