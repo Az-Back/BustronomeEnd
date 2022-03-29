@@ -45,12 +45,11 @@ session_start()
             <div class="all1">
                 <div id="demo">
                 <?php
-
-                while($use = $getdate->fetch()){
+                $use = $getdate->fetch()
                 ?>   
                 <div class="date"><?= $use['date']; ?> à <?=$use['hour']; ?> pour <span class="upgrade"> X </span> personnes <a href="../actions/deletedate.php?id=<?= $use['id']; ?>" class="xdelete">x</a></div>
                 <?php
-                }
+                
                 ?>
                 </div>
                 <br>

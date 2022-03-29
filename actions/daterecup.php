@@ -5,6 +5,7 @@ require('database.php');
  
 if(isset($_POST['Submit'])){
 
+    if(!empty($_POST['fdate']) && !empty($_POST['fhours'])){
     // Verifier si les champs ne sont pas vides
     
         
@@ -24,7 +25,9 @@ if(isset($_POST['Submit'])){
 
         $successMsg = 'Cela a marcher';
         header('Location: ../pages/reservation.php');
+     } else {
+        $errorMsg = 'Veuilez remplir tous les champs !';
      }
-
+    }
     $getdate = $bdd->query('SELECT id, date, hour FROM dates');    
 ?>

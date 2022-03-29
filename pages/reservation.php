@@ -26,6 +26,7 @@ require("../actions/daterecup.php");
 </head>
 <body>
 <?php include '../includes/navbar.php'; ?>
+<?php if(isset($errorMsg)){echo '<p>'.$errorMsg.'</p>';} ?>
 <div class="block">
 <div class="block-inside">
 <ul class="reservUL">
@@ -58,12 +59,12 @@ require("../actions/daterecup.php");
             <td rowspan="3" class="top">Déjeuner</td>
             <td>12h15</td>
             <td>Arc de Triomphe</td>
-            <td><a class="load" href="reservation2.php">Choisir</td>
+            <td><a class="loada" href="reservation2.php">Choisir</td>
         </tr>
         <tr>
             <td>12h15</td>
             <td>Arc de Triomphe</td>
-            <td><a class="load" href="reservation2.php">Choisir</td>
+            <td><a class="loada" href="reservation2.php">Choisir</td>
         </tr>
         <tr>
             <td>12h45</td>
@@ -74,7 +75,7 @@ require("../actions/daterecup.php");
             <td rowspan="4" class="down">Diner</td>
             <td>19h45</td>
             <td>Arc de Triomphe</td>
-            <td><a class="load" href="reservation2.php">Choisir</td>
+            <td><a class="loada" href="reservation2.php">Choisir</td>
         </tr>
         <tr>
             <td>19h45</td>
