@@ -47,7 +47,7 @@ session_start()
                 <?php
                 $use = $getdate->fetch()
                 ?>   
-                <div class="date"><?= $use['date']; ?> à <?=$use['hour']; ?> pour <span class="upgrade"> X </span> personnes <a href="../actions/deletedate.php?id=<?= $use['id']; ?>" class="xdelete">x</a></div>
+                <div class="date"><?= $use['date']; ?> à <?=$use['hour']; ?> pour <span class="upgrade"> X </span> personnes</div>
                 <?php
                 
                 ?>
