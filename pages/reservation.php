@@ -1,5 +1,6 @@
 <?php
-session_start()
+session_start();
+require("../actions/daterecup.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,9 +16,9 @@ session_start()
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
     </style>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-  <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <!-- CSS only -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <title>Réservation</title>
@@ -34,7 +35,10 @@ session_start()
 </ul>
 <div class="all1">
 <h2 class="titre">Réservez une table</h2>
-<div id="datepicker"></div>
+<form name="input" method="post">
+        <p>Date: <input type="text" name="fdate" id="datepicker"></p>
+        <input type="submit" name="Submit" id="sub" value="Submit">
+    </form>
 <h2 class="titre1">Services possibles</h2>
 <table class="table services-Table">
     <tbody>
@@ -91,7 +95,23 @@ session_start()
 
 
 <script>
-$( "#datepicker" ).datepicker();
+$(function() {
+$( "#datepicker" ).datepicker({
+altField: "#datepicker",
+closeText: 'Fermer',
+prevText: 'Précédent',
+nextText: 'Suivant',
+currentText: 'Aujourd\'hui',
+monthNames: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
+monthNamesShort: ['Janv.', 'Févr.', 'Mars', 'Avril', 'Mai', 'Juin', 'Juil.', 'Août', 'Sept.', 'Oct.', 'Nov.', 'Déc.'],
+dayNames: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],
+dayNamesShort: ['Dim.', 'Lun.', 'Mar.', 'Mer.', 'Jeu.', 'Ven.', 'Sam.'],
+dayNamesMin: ['D', 'L', 'M', 'M', 'J', 'V', 'S'],
+weekHeader: 'Sem.',
+dateFormat: 'DD dd MM yy'
+});
+});
 </script>
+<script src="../script/calendar.js"></script>
 </body>
 </html>

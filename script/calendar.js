@@ -1,9 +1,13 @@
-const aujourdhui = new Date();
-document.getElementById("demo").innerHTML = aujourdhui;
+const tableau = document.querySelector(".table");
+const imp = document.querySelector("#sub");
+
+imp.addEventListener('click', () => {
+    tableau.style.display = 'block';
+})
 
 const plus = document.querySelectorAll(".menuPlus");
 const minus = document.querySelectorAll(".menuMoins");
-const compteur = document.querySelector('.test span');
+const compteur = document.querySelector('.upgrade');
 
 let valeur = 0;
 let tabCount = [];
@@ -60,11 +64,6 @@ minus.forEach(enleve =>
         compteur.innerHTML = valeur;
     });
 });
-
-setInterval(() =>
-{       
-    console.log(valeur);
-}, 1000)
 
 
 

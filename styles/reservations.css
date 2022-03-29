@@ -145,6 +145,18 @@ thead {
     color: white;
 }
 
+/* .ui-datepicker-calendar{
+    position: absolute;
+    top: 50% !important;
+    left: 50% !important;
+}
+
+.ui-datepicker-div{
+    position: absolute;
+    top: 50% !important;
+    left: 50% !important;
+} */
+
 .ui-widget-content {
     border: 1px solid #aaaaaa;
     background: none;
@@ -161,6 +173,7 @@ thead {
     border-top: none !important;
     line-height: 1em !important;
     height: 200px !important;
+    display: none;
 }
 
 tbody
@@ -263,13 +276,27 @@ p
     align-items: center;
 }
 
-.update 
+.test {
+    color: white;
+    font-size: 20px;
+}
+
+.upgrade {
+    color: #9b886a;
+}
+
+#update 
 {
     display: inline-block;
     margin: 0px 20px !important;
     color: white;
     vertical-align: middle;
     margin: 0 20px !important;
+}
+
+.date {
+    font-size: 30px;
+    color: white;
 }
 
 .buttondown 

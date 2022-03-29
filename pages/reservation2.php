@@ -1,5 +1,6 @@
 <?php
 require('../actions/showAllMenuAction.php');
+require("../actions/daterecup.php");
 session_start()
 ?>
 <!DOCTYPE html>
@@ -43,8 +44,18 @@ session_start()
     </ul>
             <div class="all1">
                 <div id="demo">
+                <?php
+
+                while($use = $getdate->fetch()){
+                ?>   
+                <div class="date"><?= $use['date']; ?></div>
+                <div><a href="../actions/deletedate.php?id=<?= $use['id']; ?>" class="btn btn-danger">Supprimer la date</a></div>
+                <?php
+                }
+                ?>
                 </div>
-                <div class="test">Pour <span> 0 </span> personnes </div>
+                <br>
+                <div class="test">Pour <span class="upgrade"> X </span> personnes </div>
              <div>
                 <h1 class="titre1">Nombres des couverts et choix des menus</h1>
             </div>
@@ -92,9 +103,9 @@ session_start()
                                 <p>Menu en 4 étapes sans boisson <br>+ Visite libre de l'Arc de triomphe avec accès prioritaire</p>
                             </div>
                             <div class="bottom">
-                                    <a href=""><span class="glyphicon glyphicon-minus"></span></a>
-                                <span class="update">0</span>
-                                    <a href=""><span class="glyphicon glyphicon-plus"></span></a>
+                            <a href="" class="menuMoins"><span class="glyphicon glyphicon-minus"></span></a>
+                                <span id="update">0</span>
+                                <a href="" class="menuPlus"><span class="glyphicon glyphicon-plus"></span></a>
                                 </div>
                         </div>
                     </div>
@@ -106,9 +117,9 @@ session_start()
                                 <p>Menu en 3 étapes avec une boisson. <br>Pour les moins de 12 ans</p>
                             </div>
                             <div class="bottom">
-                                    <a href=""><span class="glyphicon glyphicon-minus"></span></a>
-                                <span class="update">0</span>
-                                    <a href=""><span class="glyphicon glyphicon-plus"></span></a>
+                            <a href="" class="menuMoins"><span class="glyphicon glyphicon-minus"></span></a>
+                                <span id="update">0</span>
+                                <a href="" class="menuPlus"><span class="glyphicon glyphicon-plus"></span></a>
                                 </div>
                         </div>
                     </div>
@@ -124,9 +135,9 @@ session_start()
                 <p><?= $question['description']; ?></p>
                 </div>
                 <div class="bottom">
-                    <a href=""><span class="glyphicon glyphicon-minus"></span></a>
-                        <span class="update">0</span>
-                        <a href=""><span class="glyphicon glyphicon-plus"></span></a>
+                        <a href="" class="menuMoins"><span class="glyphicon glyphicon-minus"></span></a>
+                            <span id="update">0</span>
+                        <a href="" class="menuPlus"><span class="glyphicon glyphicon-plus"></span></a>
                 </div>
                 <div><a href="../actions/deleteMenu.php?id=<?= $question['id']; ?>" class="btn btn-danger">Supprimer le menu</a></div>
             </div>
