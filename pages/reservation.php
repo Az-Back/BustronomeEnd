@@ -19,6 +19,7 @@ require("../actions/daterecup.php");
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <scrip src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- CSS only -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <title>Réservation</title>
@@ -35,9 +36,9 @@ require("../actions/daterecup.php");
 </ul>
 <div class="all1">
 <h2 class="titre">Réservez une table</h2>
-<form name="input" method="post">
-        <p>Date: <input type="text" name="fdate" id="datepicker"></p>
-        <input type="submit" name="Submit" id="sub" value="Submit">
+<form name="input" method="post" id="dateput">
+        <p>Veuillez selectionner une date: <input type="text" name="fdate" id="datepicker"></p>
+        <input type="submit" name="Submit" id="sub" value="Soumettre">
     </form>
 <h2 class="titre1">Services possibles</h2>
 <table class="table services-Table">
@@ -91,8 +92,6 @@ require("../actions/daterecup.php");
 </div>
 <?php include '../includes/footer.php'; ?>
 </div>
-
-
 
 <script>
 $(function() {

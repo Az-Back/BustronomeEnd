@@ -1,9 +1,4 @@
-const tableau = document.querySelector(".table");
-const imp = document.querySelector("#sub");
 
-imp.addEventListener('click', () => {
-    tableau.style.display = 'block';
-})
 
 const plus = document.querySelectorAll(".menuPlus");
 const minus = document.querySelectorAll(".menuMoins");

@@ -22,9 +22,7 @@ if(isset($_POST['Submit'])){
 
         $successMsg = 'Cela a marcher';
         header('Location: ../pages/reservation.php');
-     } else {
-        $errorMsg = 'Veuilez remplir tous les champs !';
-    }
+     }
 
     $getdate = $bdd->query('SELECT id, date FROM dates');    
 ?>
