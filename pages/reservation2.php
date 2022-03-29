@@ -62,7 +62,7 @@ session_start()
                 <a class="buttondrop1 active"href="reservation.php">Continuer</a>
             </div>
             <div>
-                <h1 class="littletext">Consulter <a class="load" href="menus.php">nos menus</a>.</h1>
+                <h1 class="littletext">Consulter <a class="loada" href="menus.php">nos menus</a>.</h1>
             </div>
 
             <div class="menus">
