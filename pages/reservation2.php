@@ -48,14 +48,13 @@ session_start()
 
                 while($use = $getdate->fetch()){
                 ?>   
-                <div class="date"><?= $use['date']; ?></div>
-                <div><a href="../actions/deletedate.php?id=<?= $use['id']; ?>" class="btn btn-danger">Supprimer la date</a></div>
+                <div class="date"><?= $use['date']; ?> a <?=$use['hour']; ?> pour <span class="upgrade"> X </span> personnes <a href="../actions/deletedate.php?id=<?= $use['id']; ?>" class="xdelete">x</a></div>
                 <?php
                 }
                 ?>
                 </div>
                 <br>
-                <div class="test">Pour <span class="upgrade"> X </span> personnes </div>
+                <div class="test"> </div>
              <div>
                 <h1 class="titre1">Nombres des couverts et choix des menus</h1>
             </div>
@@ -152,7 +151,7 @@ session_start()
 </div>
 
 
-<script src="../script/calendar.js"></script>
+<script src="../script/compteur.js"></script>
 
 </body>
 </html>

@@ -37,7 +37,12 @@ require("../actions/daterecup.php");
 <div class="all1">
 <h2 class="titre">Réservez une table</h2>
 <form name="input" method="post" id="dateput">
-        <p>Veuillez selectionner une date: <input type="text" name="fdate" id="datepicker"></p>
+        <p>Veuillez selectionner une date: <input type="text" class="datedate" name="fdate" id="datepicker"></p>
+        <p>Veuillez selectionner une heure: 
+            <select name="fhours" id="selecthours">
+                    <option id="option1" name="fhours" value="12h15"><p>12:15</p></option>
+                    <option id="option2" name="fhours" value="19h45">19:45</option>
+                </select>
         <input type="submit" name="Submit" id="sub" value="Soumettre">
     </form>
 <h2 class="titre1">Services possibles</h2>
@@ -111,6 +116,6 @@ dateFormat: 'DD dd MM yy'
 });
 });
 </script>
-<script src="../script/calendar.js"></script>
+<script src="../script/compteur.js"></script>
 </body>
 </html>

@@ -145,17 +145,34 @@ thead {
     color: white;
 }
 
-/* .ui-datepicker-calendar{
-    position: absolute;
-    top: 50% !important;
-    left: 50% !important;
+#sub {
+    color: white;
+    background-color: black;
 }
 
-.ui-datepicker-div{
-    position: absolute;
-    top: 50% !important;
-    left: 50% !important;
-} */
+.datedate {
+    color: black;
+    background-color: white;
+}
+
+#selecthours {
+    color: white;
+    background-color: black;
+}
+
+#option1 {
+    color: white;
+    background-color: black;
+}
+
+#option2 {
+    color: white;
+    background-color: black;
+}
+
+.xdelete {
+    color: red;
+}
 
 .ui-widget-content {
     border: 1px solid #aaaaaa;

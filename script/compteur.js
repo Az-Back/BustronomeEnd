@@ -1,5 +1,3 @@
-
-
 const plus = document.querySelectorAll(".menuPlus");
 const minus = document.querySelectorAll(".menuMoins");
 const compteur = document.querySelector('.upgrade');

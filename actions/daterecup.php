@@ -10,13 +10,15 @@ if(isset($_POST['Submit'])){
         
         // les données de la question
         $date = $_POST['fdate'];
+        $hours = $_POST['fhours'];
         
         
         // Inserer la question sur la question
-        $insertdate = $bdd->prepare('INSERT INTO dates(date)VALUES(?)');
+        $insertdate = $bdd->prepare('INSERT INTO dates(date, hour)VALUES(?, ?)');
         $insertdate->execute(
             array(
-                $date
+                $date,
+                $hours
             )
         );
 
@@ -24,5 +26,5 @@ if(isset($_POST['Submit'])){
         header('Location: ../pages/reservation.php');
      }
 
-    $getdate = $bdd->query('SELECT id, date FROM dates');    
+    $getdate = $bdd->query('SELECT id, date, hour FROM dates');    
 ?>
