@@ -43,6 +43,7 @@ require("../actions/daterecup.php");
             <select name="fhours" id="selecthours">
                     <option id="option1" name="fhours" value="12h15"><p>12:15</p></option>
                     <option id="option2" name="fhours" value="19h45">19:45</option>
+                    <option id="option2" name="fhours" value="20h45">20:45</option>
                 </select>
         <input type="submit" name="Submit" id="sub" value="Soumettre">
     </form>

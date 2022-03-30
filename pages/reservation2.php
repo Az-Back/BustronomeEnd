@@ -137,6 +137,8 @@ session_start()
                             <span id="update">0</span>
                         <a href="" class="menuPlus"><span class="glyphicon glyphicon-plus"></span></a>
                 </div>
+                <div><a href="formulaire2.php?id=<?= $question['id']; ?>" class="btn btn-warning">Modifier le menu</a></div>
+                <br>
                 <div><a href="../actions/deleteMenu.php?id=<?= $question['id']; ?>" class="btn btn-danger">Supprimer le menu</a></div>
             </div>
         </div>    
