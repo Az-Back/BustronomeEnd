@@ -64,63 +64,6 @@ session_start()
             <div>
                 <h1 class="littletext">Consulter <a class="loada" href="menus.php">nos menus</a>.</h1>
             </div>
-
-            <div class="menus">
-                <div class="menu-container">
-                        <div class="menu">
-                            <div class="topimg"><img class="allimg" src="../images/menu_1.jpg">
-                            <h3>Déjeuner - 70€</h3>
-                            <p>Menu en 4 étapes <br>Entrée, poisson, viande et dessert</p>
-                            </div>
-                            <div class="bottom">
-                                <a href="" class="menuMoins"><span class="glyphicon glyphicon-minus"></span></a>
-                                <span id="update">0</span>
-                                <a href="" class="menuPlus"><span class="glyphicon glyphicon-plus"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="menu-container">
-                        <div class="menu">
-                            <div class="topimg">
-                                <img class="allimg" src="../images/menu_2.jpg">
-                                <h3>Déjeuner - boissons comprises - 90€</h3>
-                                <p>Menu dégustation en 4 étapes avec accord mets et vins : <br>2 verres de vin, eau minérale ou gazeuse, café ou thé</p>
-                                <div class="bottom">
-                                    <a href="" class="menuMoins"><span class="glyphicon glyphicon-minus"></span></a>
-                                <span id="update">0</span>
-                                    <a href="" class="menuPlus"><span class="glyphicon glyphicon-plus"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="menu-container">
-                        <div class="menu">
-                            <div class="topimg">
-                                <img class="allimg" src="../images/menu_40.jpg">
-                                <h3>Déjeuner et visite Arc de triomphe - 83€</h3>
-                                <p>Menu en 4 étapes sans boisson <br>+ Visite libre de l'Arc de triomphe avec accès prioritaire</p>
-                            </div>
-                            <div class="bottom">
-                            <a href="" class="menuMoins"><span class="glyphicon glyphicon-minus"></span></a>
-                                <span id="update">0</span>
-                                <a href="" class="menuPlus"><span class="glyphicon glyphicon-plus"></span></a>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="menu-container">
-                        <div class="menu">
-                            <div class="topimg">
-                                <img class="allimg" src="../images/menu_3.jpg">
-                                <h3>Déjeuner enfant - 40€</h3>
-                                <p>Menu en 3 étapes avec une boisson. <br>Pour les moins de 12 ans</p>
-                            </div>
-                            <div class="bottom">
-                            <a href="" class="menuMoins"><span class="glyphicon glyphicon-minus"></span></a>
-                                <span id="update">0</span>
-                                <a href="" class="menuPlus"><span class="glyphicon glyphicon-plus"></span></a>
-                                </div>
-                        </div>
-                    </div>
                     <?php
 
                     while($question = $getAllQuestions->fetch()){
@@ -137,10 +80,17 @@ session_start()
                             <span id="update">0</span>
                         <a href="" class="menuPlus"><span class="glyphicon glyphicon-plus"></span></a>
                 </div>
+                <?php 
+        if(isset($_SESSION['auth'])){
+          ?>
                 <div><a href="formulaire2.php?id=<?= $question['id']; ?>" class="btn btn-warning">Modifier le menu</a></div>
                 <br>
                 <div><a href="../actions/deleteMenu.php?id=<?= $question['id']; ?>" class="btn btn-danger">Supprimer le menu</a></div>
-            </div>
+            
+            <?php
+        } 
+          ?>
+          </div>
         </div>    
         <?php
     }
