@@ -299,15 +299,27 @@ p
 
 .upgrade {
     color: #9b886a;
+    width: 3%;
+    background-color: #222;
+    text-align: center;
+    border: none;
 }
 
 #update 
 {
     display: inline-block;
-    margin: 0px 20px !important;
     color: white;
     vertical-align: middle;
-    margin: 0 20px !important;
+    text-align: center;
+    width: 10%;
+    background-color: #222;
+    border: none;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button { 
+	-webkit-appearance: none;
+	margin:0;
 }
 
 .date {

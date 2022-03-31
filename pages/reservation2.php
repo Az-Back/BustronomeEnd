@@ -1,6 +1,7 @@
 <?php
 require('../actions/showAllMenuAction.php');
 require("../actions/daterecup.php");
+require("../actions/reservation.php");
 session_start()
 ?>
 <!DOCTYPE html>
@@ -47,7 +48,7 @@ session_start()
                 <?php
                 $use = $getdate->fetch()
                 ?>   
-                <div class="date"><?= $use['date']; ?> à <?=$use['hour']; ?> pour <span class="upgrade"> X </span> personnes</div>
+                <div class="date"><?= $use['date']; ?> à <?=$use['hour']; ?> pour <form method="POST"><input type="text" class="upgrade" name="counterall">personnes</div>
                 <?php
                 
                 ?>
@@ -60,6 +61,7 @@ session_start()
             <div class="buttondown">
                 <a class="buttondrop" href="reservation.php">Retour</a>
                 <a class="buttondrop1 active"href="reservation.php">Continuer</a>
+                <button type="submit" class="btn btn-primary" name="valid">Envoyer le menu</button>
             </div>
             <div>
                 <h1 class="littletext">Consulter <a class="loada" href="menus.php">nos menus</a>.</h1>
@@ -77,7 +79,7 @@ session_start()
                 </div>
                 <div class="bottom">
                         <a href="" class="menuMoins"><span class="glyphicon glyphicon-minus"></span></a>
-                            <span id="update">0</span>
+                           <input id="update" type="text" min='0' value="0" name="counter"></form> 
                         <a href="" class="menuPlus"><span class="glyphicon glyphicon-plus"></span></a>
                 </div>
                 <?php 
