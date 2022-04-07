@@ -59,7 +59,4 @@ minus.forEach(enleve =>
     });
 });
 
-
-
-
-
+console.log(tabCount);

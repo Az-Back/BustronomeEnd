@@ -74,7 +74,7 @@ session_start()
             <div class="menu">
                 <div class="topimg">
                 <?= '<img class="allimg" src="data:image/png|image/jpeg|image/gif|image/jpg;base64,' . base64_encode( $question['bin'] ) . '" />'; ?>
-                <h3><?= $question['titre']; ?> <?= $question['contenu']; ?></h3>
+                <h3><?= $question['titre']; ?> - <?= $question['contenu']; ?></h3>
                 <p><?= $question['description']; ?></p>
                 </div>
                 <div class="bottom">
